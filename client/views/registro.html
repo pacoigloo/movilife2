@@ -1,0 +1,14 @@
+<template name="registro">
+    <img src="/img/familia.jpg" id="fondo-familia"/>
+    <form class="form-signin" id="form-login">
+        <h2 class="form-signin-heading">Nombre de usuario</h2>
+        <label for="inputEmail" class="sr-only">Nombre de usuario</label>
+        <input type="email" id="inputEmail" class="form-control" required="" autofocus="" name="loginEmail">
+        <h2 class="form-signin-heading">Contraseña</h2>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" required="" name="loginPassword">
+        <h3><a id="recordar">Recordar contraseña</a></h3>
+        <!--<button class="btn btn-lg btn-primary btn-block" href="{{pathFor 'menu'}}">INGRESAR</button>-->
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="INGRESAR" />
+    </form>
+</template>

@@ -1,0 +1,370 @@
+<template name="globalHome">
+    <div class="cont-formulario">
+        <h1>Solicitud para seguro global home</h1>
+        <form>
+            <div class="form-group">
+                <label for="datetimepicker1">Fecha de solicitud</label>
+                <div class='input-group date datetimepicker'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad">
+            </div>
+            <div class="form-group">
+                <label for="poliza">Poliza</label>
+                <input type="text" class="form-control" id="ciudad" disabled placeholder="ML0001">
+            </div>
+            <div class="form-group">
+                <label for="datetimepicker">Vigencia solicitada del seguro</label>
+                <div class='input-group date datetimepicker'>
+                    <input type='text' class="form-control" placeholder="Desde"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                <div class='input-group date datetimepicker'>
+                    <input type='text' class="form-control" placeholder="Hasta"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="block-label">¿Tiene otros seguros que estén amparando los bienes objeto de este seguro?</label>
+                <label class="radio-inline" for="otros-seguros">
+                    <input type="radio" name="otros-seguros" id="otros-seguros1" value="cc" selected><span>Si</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio2">
+                    <input type="radio" name="otros-seguros" id="otros-seguros2" value="option2"><span>No</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="compania">En caso afirmativo, ¿En que compañia?</label>
+                <input type="text" class="form-control" id="compania">
+            </div>
+            <div class="form-group">
+                <label for="otra-poliza">No. de póliza</label>
+                <input type="text" class="form-control" id="otra-poliza">
+            </div>
+            <div class="subtitle form-group">Datos del tomador</div>
+            <div class="form-group">
+                <label class="block-label">Tipo de documento</label>
+                <label class="radio-inline" for="tipo-documento1">
+                    <input type="radio" name="tipo-documento1" id="tipo-documento1_1" value="cc" selected><span>C.C.</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio2">
+                    <input type="radio" name="tipo-documento1" id="tipo-documento1_2" value="option2"><span>C.E.</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="tipo-documento1" id="tipo-documento1_3" value="option3"><span>NIT</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="num-doc">Número documento de identidad</label>
+                <input type="text" class="form-control" id="num-doc">
+            </div>
+            <div class="form-group">
+                <label for="nacimiento-lugar">Lugar de nacimiento</label>
+                <input type="text" class="form-control" id="nacimiento-lugar">
+            </div>
+            <div class="form-group">
+                <label for="datetimepicker2">Fecha de nacimiento</label>
+                <div class='input-group date datetimepicker'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos o razón social</label>
+                <input type="text" class="form-control" id="apellidos">
+            </div>
+            <div class="form-group">
+                <label for="nombres">Nombre(s)</label>
+                <input type="text" class="form-control" id="nombres">
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Dirección domicilio</label>
+                <input type="text" class="form-control" id="domicilio">
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <select class="form-control">
+                    <option selected>Cundinamarca</option>
+                    <option>Nariño</option>
+                    <option>Valle del Cauca</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <select class="form-control">
+                    <option selected>Cali</option>
+                    <option>Medellín</option>
+                    <option>Bogotá</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="barrio">Barrio</label>
+                <select class="form-control">
+                    <option selected>Barrio 1</option>
+                    <option>Barrio 2</option>
+                    <option>Barrio 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono/Celular</label>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="form-group">
+                <label for="Extensión">Extensión</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="subtitle form-group">Datos del asegurado</div>
+            <div class="form-group">
+                <label class="block-label">Tipo de documento</label>
+                <label class="radio-inline" for="tipo-documento2">
+                    <input type="radio" name="tipo-documento2" id="tipo-documento2_1" value="cc" selected><span>C.C.</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio2">
+                    <input type="radio" name="tipo-documento2" id="tipo-documento2_2" value="option2"><span>C.E.</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="tipo-documento2" id="tipo-documento2_3" value="option3"><span>NIT</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="num-doc">Número documento de identidad</label>
+                <input type="text" class="form-control" id="num-doc">
+            </div>
+            <div class="form-group">
+                <label for="nacimiento-lugar">Lugar de nacimiento</label>
+                <input type="text" class="form-control" id="nacimiento-lugar">
+            </div>
+            <div class="form-group">
+                <label for="datetimepicker2">Fecha de nacimiento</label>
+                <div class='input-group date datetimepicker'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos o razón social</label>
+                <input type="text" class="form-control" id="apellidos">
+            </div>
+            <div class="form-group">
+                <label for="nombres">Nombre(s)</label>
+                <input type="text" class="form-control" id="nombres">
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Dirección domicilio</label>
+                <input type="text" class="form-control" id="domicilio">
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <select class="form-control">
+                    <option selected>Cundinamarca</option>
+                    <option>Nariño</option>
+                    <option>Valle del Cauca</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <select class="form-control">
+                    <option selected>Cali</option>
+                    <option>Medellín</option>
+                    <option>Bogotá</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="barrio">Barrio</label>
+                <select class="form-control">
+                    <option selected>Barrio 1</option>
+                    <option>Barrio 2</option>
+                    <option>Barrio 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono/Celular</label>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label class="block-label">Profesión</label>
+                <label class="radio-inline" for="profesion1">
+                    <input type="radio" name="profesion1" id="profesion1_1" value="cc" selected><span>Arquitectura</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio2">
+                    <input type="radio" name="profesion1" id="profesion1_2" value="option2"><span>Estudiante</span>
+                </label>
+                <!--<label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="profesion" id="inlineRadio3" value="option3"><span>Ciencias de la salud</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="profesion" id="inlineRadio3" value="option3"><span>Area administrativa</span>
+                </label>-->
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="profesion1" id="profesion1_3" value="option3"><span>Ingeniería</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="profesion1" id="profesion1_4" value="option3"><span>Derecho</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="profesion1" id="profesion1_5" value="option3"><span>Otros</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="block-label">Ocupación</label>
+                <label class="radio-inline" for="ocupacion">
+                    <input type="radio" name="ocupacion" id="ocupacion_1" value="cc" selected><span>Comerciante</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio2">
+                    <input type="radio" name="ocupacion" id="ocupacion_2" value="option2"><span>Militar</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="ocupacion" id="ocupacion_3" value="option3"><span>Empleado</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="ocupacion" id="ocupacion_4" value="option3"><span>Educador</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="ocupacion" id="ocupacion_5" value="option3"><span>Pensionado</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="ocupacion" id="ocupacion_6" value="option3"><span>Otra</span>
+                </label>
+            </div>
+            <div class="subtitle form-group">Datos del beneficiario</div>
+            <div class="form-group">
+                <label for="">Apellidos, nombres y/o razón social</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label class="block-label">Tipo de documento</label>
+                <label class="radio-inline" for="tipo-documento3">
+                    <input type="radio" name="tipo-documento3" id="tipo-documento3-1" value="cc" selected><span>C.C.</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio2">
+                    <input type="radio" name="tipo-documento3" id="tipo-documento3-2" value="option2"><span>C.E.</span>
+                </label>
+                <label class="radio-inline" for="inlineRadio3">
+                    <input type="radio" name="tipo-documento3" id="tipo-documento3-3" value="option3"><span>NIT</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="num-doc">Número documento de identidad</label>
+                <input type="text" class="form-control" id="num-doc">
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Dirección domicilio</label>
+                <input type="text" class="form-control" id="domicilio">
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <select class="form-control">
+                    <option selected>Cundinamarca</option>
+                    <option>Nariño</option>
+                    <option>Valle del Cauca</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <select class="form-control">
+                    <option selected>Cali</option>
+                    <option>Medellín</option>
+                    <option>Bogotá</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono/Celular</label>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="form-group">
+                <label class="block-label">Indique los vínculos existentes entre el tomador, asegurado y beneficiario</label>
+                <label class="checkbox-inline" for="vinculos">
+                    <input type="checkbox" name="vinculos" id="vinculos1" value="cc" selected><span>Familiar</span>
+                </label>
+                <label class="checkbox-inline" for="inlineRadio1">
+                    <input type="checkbox" name="vinculos" id="vinculos2" value="cc" selected><span>Comercial</span>
+                </label>
+                <label class="checkbox-inline" for="inlineRadio1">
+                    <input type="checkbox" name="vinculos" id="vinculos3" value="cc" selected><span>Laboral</span>
+                </label>
+                <label class="checkbox-inline" for="inlineRadio1">
+                    <input type="checkbox" name="vinculos" id="vinculos4" value="cc" selected><span>Otro</span>
+                </label>
+            </div>
+            <div class="subtitle form-group">Datos del riesgo</div>
+            <div class="form-group">
+                <label for="">Dirección del riesgo</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <select class="form-control">
+                    <option selected>Cundinamarca</option>
+                    <option>Nariño</option>
+                    <option>Valle del Cauca</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <select class="form-control">
+                    <option selected>Cali</option>
+                    <option>Medellín</option>
+                    <option>Bogotá</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Teléfono</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label for="">Número de pisos del inmueble</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label class="block-label">Años de construcción</label>
+                <label class="radio-inline" for="construccion">
+                    <input type="radio" name="construccion" id="construccion1" value="cc" selected><span>Antes de 1960</span>
+                </label>
+                <label class="radio-inline" for="construccion">
+                    <input type="radio" name="construccion" id="construccion2" value="option2"><span>1960-1975</span>
+                </label>
+                <label class="radio-inline" for="construccion">
+                    <input type="radio" name="construccion" id="construccion3" value="option3"><span>1975-1984</span>
+                </label>
+                <label class="radio-inline" for="construccion">
+                    <input type="radio" name="construccion" id="construccion4" value="option3"><span>1984-1998</span>
+                </label>
+                <label class="radio-inline" for="construccion">
+                    <input type="radio" name="construccion" id="construccion5" value="option3"><span>Después de 1998</span>
+                </label>
+            </div>
+            <div class="subtitle form-group">Tipo de inmueble</div>
+            <div class="form-group">
+                <label class="block-label">Seleccione el tipo de inmueble a asegurar</label>
+                <label class="radio-inline" for="inmueble">
+                    <input type="radio" name="inmueble" id="inmueble1" value="cc" selected><span>Casa</span>
+                </label>
+                <label class="radio-inline" for="inmueble">
+                    <input type="radio" name="inmueble" id="inmueble2" value="option2"><span>Apartamento</span>
+                </label>
+                <label class="radio-inline" for="inmueble">
+                    <input type="radio" name="inmueble" id="inmueble3" value="option3"><span>Casa de descanso dentro de condominio</span>
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block ancho">CONFIRMAR</button>
+        </form>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template name="recordar">
+    <form class="form-signin" id="form-recordar" action="/forgot">
+        <h2 class="form-signin-heading">Nombre de usuario</h2>
+        <label for="forgot-email" class="sr-only">Nombre de usuario</label>
+        <input type="email" id="forgot-email" class="form-control" required="" autofocus="" name="forgot-email">
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="RECORDAR" />
+    </form>
+</template>
+
+<template name="ResetPassword">
+
+    {{#if resetPassword}}
+    <form action="/reset-password"  id="resetPasswordForm" method="post">
+        <input id="resetPasswordPassword" name="password" placeholder="New Password" type="password" >
+        <input id="resetPasswordPasswordConfirm" name="password-confirm" placeholder="Confirm" type="password" >
+        <input class="btn-submit" type="submit" value="RESET">
+    </form>
+    <!-- end #reset-password-form -->
+    {{/if}}
+
+</template>
